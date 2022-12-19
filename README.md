@@ -1,0 +1,2 @@
+# golang-ddd-template
+ 
