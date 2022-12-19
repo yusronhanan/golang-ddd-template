@@ -6,21 +6,26 @@ type Repository struct {
 	db string
 }
 
-func (r Repository) Insert(book domain.Book) error {
+func (r Repository) Insert(Notes domain.Notes) error {
 	//TODO implement me
 	panic("implement me")
 }
 
-func (r Repository) Update(book domain.Book) error {
+func (r Repository) Update(Notes domain.Notes) error {
 	//TODO implement me
 	panic("implement me")
 }
 
-func (r Repository) GetByID(id int) (*domain.Book, error) {
+func (r Repository) GetByID(id int) (*domain.Notes, error) {
 	//TODO implement me
 	panic("implement me")
 }
 
-func NewRepository(db string) domain.BookRepository {
+func (r Repository) GetByBookID(bookId int) ([]domain.Notes, error) {
+	//TODO implement me
+	panic("implement me")
+}
+
+func NewRepository(db string) domain.NotesRepository {
 	return &Repository{db}
 }
